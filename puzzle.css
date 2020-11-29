@@ -25,17 +25,16 @@ body {
   height: 450px;
   border-radius: 5px;
   display: inline-block;
-  background-color: #FBD2CC;
-  box-shadow: 0 0 10px #F69F95;
+  background-color: #fbd2cc;
+  box-shadow: 0 0 10px #f69f95;
 }
-
 
 #game div {
   position: absolute;
   width: 149px;
   height: 149px;
   box-shadow: 1px 1px 2px #777;
-  background-color: #F69F95;
+  background-color: #f69f95;
   color: white;
   text-align: center;
   font-size: 150px;
@@ -73,10 +72,10 @@ body {
   font-size: 28px;
   width: 100px;
   height: 28px;
-  background-color: #FBD2CC;
-  color: #F69F95;
+  background-color: #fbd2cc;
+  color: #f69f95;
   border-radius: 5px;
-  box-shadow: 2px 2px 5px #FBD2CC;
+  box-shadow: 2px 2px 5px #fbd2cc;
   text-align: center;
   cursor: pointer;
 }
@@ -88,17 +87,18 @@ body {
   width: 100px;
   height: 28px;
   background-color: #ccc;
-  border-radius: 5px; 
-  box-shadow: 2px 2px 5px #ccc; 
+  border-radius: 5px;
+  box-shadow: 2px 2px 5px #ccc;
   text-align: center;
   cursor: pointer;
 }
 /*给Reset按钮设置属性*/
 
-#d1 {
+/* #d1 {
   left: 0px;
 }
 #d2 {
+  top: 0px;
   left: 150px;
 }
 #d3 {
@@ -119,7 +119,13 @@ body {
   top: 300px;
 }
 #d8 {
-  left: 150px;
   top: 300px;
+  left: 150px;
+} */
+
+#empty {
+  left: 300px;
+  top: 300px;
+  opacity: 0;
 }
 /*绝对定位给每个小方块按照顺序排好位置*/

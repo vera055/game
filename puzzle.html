@@ -3,23 +3,33 @@
   <head>
     <meta charset="UTF-8" />
     <title>Puzzle</title>
-    <link rel="stylesheet" type="text/css" href="puzzle.css" />
+    <link rel="stylesheet" type="text/css" href="puzzle.css?refreshcss=1" />
     <script type="text/javascript" src="puzzle.js"></script>
+    <script src="https://cdn.staticfile.org/jquery/1.10.2/jquery.min.js">
+    </script>
+    <script>
+      $(document).ready(function(){
+        $("#d8").click(function(){
+          move("d8");
+        });
+      });
+    </script>
   </head>
   <body>
     <div id="container">
       <!--最外面的DIV，用来包含里面的结构-->
       <div id="game">
         <!--游戏区，也就是大DIV方块-->
-        <div id="d1" onclick="move(1)">1</div>
+        <div id="d1" style="top: 0px;left: 0px;" onclick='move("d1")'>1</div>
         <!--小DIV，也就是8个小方块。当点击的时候执行move()函数，参数是显示的编号，这样我们就知道点击了那个方块-->
-        <div id="d2" onclick="move(2)">2</div>
-        <div id="d3" onclick="move(3)">3</div>
-        <div id="d4" onclick="move(4)">4</div>
-        <div id="d5" onclick="move(5)">5</div>
-        <div id="d6" onclick="move(6)">6</div>
-        <div id="d7" onclick="move(7)">7</div>
-        <div id="d8" onclick="move(8)">8</div>
+        <div id="d2" style="top: 0px;left: 150px;" onclick='move("d2")'>2</div>
+        <div id="d3" style="top: 0px;left: 300px;" onclick='move("d3")'>3</div>
+        <div id="d4" style="top: 150px;left: 0px;" onclick='move("d4")'>4</div>
+        <div id="d5" style="top: 150px;left: 150px;" onclick='move("d5")'>5</div>
+        <div id="d6" style="top: 150px;left: 300px;" onclick='move("d6")'>6</div>
+        <div id="d7" style="top: 300px;left: 0px;" onclick='move("d7")'>7</div>
+        <div id="d8" style="top: 300px;left: 150px;">8</div>
+        <div id="empty"></div>
       </div>
       <div id="control">
         <!--游戏控制区-->
